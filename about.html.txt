@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>À Propos - Mon Site de Voyage</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <!-- En-tête de la page (logo, navigation, etc.) -->
+    </header>
+    <main>
+        <h1>À Propos de Moi</h1>
+        <section class="about-me">
+            <img src="assets/photos/ma-photo.jpg" alt="Ma Photo" class="ma-photo">
+            <p>Bonjour ! Je suis [Votre Nom], passionné(e) de voyages et d'aventures. Sur ce site, je partage mes expériences, découvertes et conseils pour ceux qui cherchent à explorer le monde.</p>
+            <!-- Ajoutez plus de contenu sur vous ici -->
+        </section>
+        <section class="reseaux-sociaux">
+            <h2>Retrouvez-moi sur les réseaux sociaux</h2>
+            <a href="https://facebook.com/votreprofil" target="_blank">Facebook</a>
+            <a href="https://twitter.com/votreprofil" target="_blank">Twitter</a>
+            <a href="https://instagram.com/votreprofil" target="_blank">Instagram</a>
+            <!-- Ajoutez d'autres liens de réseaux sociaux ici -->
+        </section>
+    </main>
+    <footer>
+        <!-- Pied de page (copyright, réseaux sociaux, etc.) -->
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
