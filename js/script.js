@@ -45,3 +45,22 @@ function chargerHTML(url, elementId) {
 chargerHTML('chemin/vers/fichier1.html', 'elementId1');
 chargerHTML('chemin/vers/fichier2.html', 'elementId2');
 // ... et ainsi de suite pour les autres fichiers
+
+
+
+// Fonction pour charger le contenu HTML d'un fichier et l'ajouter à un élément du DOM
+function chargerSection(url, elementId) {
+  fetch(url)
+    .then(response => response.text())
+    .then(html => {
+      document.getElementById(elementId).innerHTML = html;
+    })
+    .catch(err => {
+      console.error('Erreur lors du chargement du fichier HTML', err);
+    });
+}
+
+// Charger les sections dans les éléments correspondants
+chargerSection('header.html', 'header');
+chargerSection('navbar.html', 'navbar');
+chargerSection('footer.html', 'footer');
