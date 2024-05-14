@@ -25,3 +25,23 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
+
+
+// Fonction pour charger le contenu HTML d'un fichier et l'ajouter à un élément du DOM
+function chargerHTML(url, elementId) {
+  fetch(url)
+    .then(function(response) {
+      return response.text();
+    })
+    .then(function(html) {
+      document.getElementById(elementId).innerHTML = html;
+    })
+    .catch(function(err) {
+      console.warn('Erreur lors du chargement du fichier HTML', err);
+    });
+}
+
+// Appel de la fonction pour chaque fichier HTML que vous souhaitez charger
+chargerHTML('chemin/vers/fichier1.html', 'elementId1');
+chargerHTML('chemin/vers/fichier2.html', 'elementId2');
+// ... et ainsi de suite pour les autres fichiers
