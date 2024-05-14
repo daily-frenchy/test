@@ -61,6 +61,6 @@ function chargerSection(url, elementId) {
 }
 
 // Charger les sections dans les éléments correspondants
-chargerSection('header.html', 'header');
-chargerSection('navbar.html', 'navbar');
-chargerSection('footer.html', 'footer');
+chargerSection('./html/header.html', 'header');
+chargerSection('./html/navbar.html', 'navbar');
+chargerSection('./html/footer.html', 'footer');
